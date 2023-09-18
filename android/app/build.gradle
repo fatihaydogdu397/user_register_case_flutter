@@ -44,13 +44,14 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.user_register_case_flutter"
+        applicationId "neyasis.case"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -60,7 +61,33 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+    flavorDimensions "flavors"
+
+    productFlavors {
+        atest {
+            dimension "flavors"
+            resValue "string", "app_name", "Neyasis Case Test"
+            applicationId "neyasis.case.test"
+            versionCode 1
+            versionName "1.0.0"
+        }
+        uat {
+            dimension "flavors"
+            resValue "string", "app_name", "Neyasis Case Uat"
+            applicationId "neyasis.case.uat"
+            versionCode 2
+            versionName "2.0.0"
+        }
+        prod {
+            dimension "flavors"
+            resValue "string", "app_name", "Neyasis Case"
+            applicationId "neyasis.case"
+            versionCode 3
+            versionName "3.0.0"
+        }
+    }
 }
+
 
 flutter {
     source '../..'

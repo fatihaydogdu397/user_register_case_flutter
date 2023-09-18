@@ -1,0 +1,16 @@
+{
+
+    "name":"Ad",
+    "surname":"Soyad",
+    "phoneNumber":"Telefon Numarası",
+    "identityNumber":"Kimlik Numarası",
+    "salary":"Maaş",
+    "birthDate":"Doğum Günü",
+    "update":"Güncelle",
+    "delete":"Sil",
+    "create":"Oluştur",
+    "createNewUser":"Yeni Kullanıcı Oluştur",
+    "updateUser":"Kullanıcı Güncelle",
+    "userListScreen":"Kullanıcı Listesi",
+    "identityValidatorError":"Kimlik numarası minimum 11 karakter olmalıdır"
+}

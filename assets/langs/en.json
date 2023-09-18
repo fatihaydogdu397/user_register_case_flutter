@@ -1,0 +1,16 @@
+{
+
+    "name":"Name",
+    "surname":"Surname",
+    "phoneNumber":"Phone Number",
+    "identityNumber":"Identity Number",
+    "salary":"Salary",
+    "birthDate":"Birth Date",
+    "update":"Update",
+    "delete":"Delete",
+    "create":"Create",
+    "createNewUser":"Create New User",
+    "updateUser":"Update User",
+    "userListScreen":"User List",
+    "identityValidatorError":"Identity number must be 11 character at least"
+}
