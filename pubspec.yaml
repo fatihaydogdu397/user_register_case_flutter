@@ -1,0 +1,45 @@
+name: user_register_case_flutter
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_dotenv: ^5.1.0
+  flutter_native_splash: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  json_serializable: ^6.7.1
+  get_it: ^7.6.4
+  build_runner: ^2.4.6
+  provider: ^6.0.5
+  dio: ^5.3.2
+  
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/langs/
+    - .env
+
+flutter_native_splash:
+  image: assets/splash.jpg
+  color: 42a5f5
+  android: true
+  ios: true
+  fit: BoxFit.contain
+  fillscreen: true
